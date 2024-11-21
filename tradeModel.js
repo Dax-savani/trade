@@ -6,7 +6,7 @@ const tradeSchema = new mongoose.Schema({
     entryPrice: { type: Number, required: true },
     stopLoss: { type: Number, required: true },
     target: { type: Number, required: true },
-    targetRatio: { type: Number, required: true },
+    targetRatio: { type: String, required: true },
     quantity: { type: Number, required: true },
     exitPrice: { type: Number },
     pyramiding: { type: String, default: "0 times" },
