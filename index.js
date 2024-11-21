@@ -17,6 +17,7 @@ const connectionDB = async (database) => {
         .catch((err) => console.log(`Err : ${err}`));
 };
 
+
 connectionDB(process.env.DB_CONNECTION_STRING);
 
 //Middlewares
