@@ -10,7 +10,7 @@ const tradeSchema = new mongoose.Schema({
     quantity: { type: Number },
     exitPrice: { type: Number },
     pyramiding: { type: String, default: "0 times" },
-    profitOrLoss: { type: String, enum: ["profit", "loss"] },
+    profitOrLoss: { type: String },
     profitLossPrice: { type: Number },
     emotionWhenBuying: { type: String },
     emotionDuringTrade: { type: String },
