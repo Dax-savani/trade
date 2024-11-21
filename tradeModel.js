@@ -4,6 +4,7 @@ const tradeSchema = new mongoose.Schema({
     buyDate: { type: Date },
     strategy: { type: String },
     entryPrice: { type: Number },
+    stockType: { type: String },
     stopLoss: { type: Number },
     target: { type: Number },
     targetRatio: { type: String },
