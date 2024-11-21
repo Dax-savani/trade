@@ -5,9 +5,8 @@ const Trade = require('./tradeModel')
 const dotenv = require("dotenv").config();
 const PORT = process.env.PORT || 4000;
 const cors = require('cors');
-
 app.use(cors());
-//connection to database
+
 const connectionDB = async (database) => {
     await mongoose
         .connect(database)
@@ -16,7 +15,6 @@ const connectionDB = async (database) => {
         )
         .catch((err) => console.log(`Err : ${err}`));
 };
-
 
 connectionDB(process.env.DB_CONNECTION_STRING);
 
